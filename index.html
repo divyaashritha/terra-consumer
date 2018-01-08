@@ -1,12 +1,46 @@
-<!doctype html>
-<html lang="en-US" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Terra Consumer</title>
-  <link href="terra-consumer-d42369956fe8e32be11a.css" rel="stylesheet"></head>
-  <body>
-    <div id="root"></div>
-  <script type="text/javascript" src="babel-polyfill-d42369956fe8e32be11a.js"></script><script type="text/javascript" src="terra-consumer-d42369956fe8e32be11a.js"></script></body>
-</html>
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="storybook-version" content="3.2.16">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+        <title>Storybook</title>
+        <style>
+          /*
+            When resizing panels, the drag event breaks if the cursor
+            moves over the iframe. Add the 'dragging' class to the body
+            at drag start and remove it when the drag ends.
+           */
+          .dragging iframe {
+            pointer-events: none;
+          }
+
+          /* Styling the fuzzy search box placeholders */
+          .searchBox::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: #ddd;
+            font-size: 16px;
+          }
+
+          .searchBox::-moz-placeholder { /* Firefox 19+ */
+            color: #ddd;
+            font-size: 16px;
+          }
+
+          .searchBox:focus{
+            border-color: #EEE !important;
+          }
+
+          .btn:hover{
+            background-color: #eee
+          }
+        </style>
+        
+      </head>
+      <body style="margin: 0;">
+        <div id="root"></div>
+        <script src="static/manager.e938630cef62539d697d.bundle.js"></script>
+      </body>
+    </html>
+  
